@@ -1,7 +1,37 @@
-Linux基础入门
-=====
-
-[TOC]
+* [Linux为何物？](#linux为何物)
+* [Linux的诞生历史](#linux的诞生历史)
+* [Linux重要人物L/K/D/S/B/T](#linux重要人物lkdsbt)
+* [学习Linux的路线](#学习linux的路线)
+* [tty, terminal, console的概念🔗](#tty-terminal-console的概念)
+* [命令解析器shell](#命令解析器shell)
+* [Linux哲学](#linux哲学)
+* [Linux目录结构](#linux目录结构)
+* [绝对路径/相对路径./](#绝对路径相对路径)
+* [快捷键T/TT/C/D/A/E/U !!](#快捷键tttcdaeu-)
+* [常用命令](#常用命令)
+  * [ls/cd/pwd/mkdir/rm/cp/mv/ln](#lscdpwdmkdirrmcpmvln)
+  * [touch/cat/more/head/tail](#touchcatmoreheadtail)
+  * [ps/top/kill/killall/bg/fg](#pstopkillkillallbgfg)
+  * [tar cf/xf czf/xzf cjf/xjf](#tar-cfxf-czfxzf-cjfxjf)
+  * [gzip](#gzip)
+  * [ping/whois/dig/wget](#pingwhoisdigwget)
+  * [date/cal/uptime/w/whoami/finger/df/du](#datecaluptimewwhoamifingerdfdu)
+  * [uname/free](#unamefree)
+  * [grep搜索 && 管道与grep](#grep搜索--管道与grep)
+  * [./configure make dpkg rpm](#configure-make-dpkg-rpm)
+  * [使用man时的搜索、翻页](#使用man时的搜索翻页)
+  * [whoami/adduser/groups/su/usermod](#whoamiaddusergroupssuusermod)
+* [通配符 * ? { } [ ] [^]](#通配符-------)
+* [查看Linux文件属性、权限](#查看linux文件属性权限)
+* [变更文件所有者、权限](#变更文件所有者权限)
+* [软链接和硬链接](#软链接和硬链接)
+* [Linux中的环境变量🔗](#linux中的环境变量)
+  * [变量和环境变量的概念](#变量和环境变量的概念)
+  * [定义局部、全局环境变量](#定义局部全局环境变量)
+  * [局部环境变量与全局环境变量的特性](#局部环境变量与全局环境变量的特性)
+  * [/etc/bashrc .bashrc .profile](#etcbashrc-bashrc-profile)
+  * [环境变量PATH](#环境变量path)
+* [test GitHub](#test-github)
 
 参考：https://www.lanqiao.cn/courses/1
 
@@ -370,6 +400,6 @@ tmp="son var" # 子shell进程定义局部环境变量
 
 这样就可以在任意位置执行 `run` 命令跑你的脚本文件 `run.sh` 了
 
-**注：**alias的效力仅及于该次登入的操作。若要每次登入是即自动设好别名，可在.profile或.zshrc等环境变量配置文件中设定指令的别名
+**注**：alias的效力仅及于该次登入的操作。若要每次登入是即自动设好别名，可在.profile或.zshrc等环境变量配置文件中设定指令的别名
 
 ## test GitHub
